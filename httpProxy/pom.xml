@@ -1,18 +1,29 @@
 <project>
-   <modelVersion>4.0.0</modelVersion>
-   <groupId>com.nfstools</groupId>
-   <artifactId>http-proxy</artifactId>
-   <version>0.0.1-SNAPSHOT</version>
-   <packaging>jar</packaging>
-   <name>HTTP Proxy</name>
- 
-   <dependencies>
- 
-  </dependencies>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.nfstools</groupId>
+	<artifactId>http-proxy</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>HTTP Proxy</name>
 
-   <build>
-      <plugins>
-        
-      </plugins>
-   </build>
+	<dependencies>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<mainClass>com.nfstools.httpproxy.jProxy</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
